@@ -1,0 +1,73 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather {
+  width: 37.5rem;
+  height: auto;
+  padding: 2rem;
+  background-color: rgb(155, 220, 229);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+h1, h2 {
+  margin: 10px 0;
+  text-align: center;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .weather {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  input {
+    width: 100%;
+  }
+}
