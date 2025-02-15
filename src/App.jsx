@@ -17,7 +17,7 @@ function App() {
       return;
     }
     setError('');
-    await axios.get(`http://api.weatherapi.com/v1/current.json?key=ed1918c0fdb5408f80d94546253101&q=${city}`)
+    await axios.get(`https://api.weatherapi.com/v1/current.json?key=ed1918c0fdb5408f80d94546253101&q=${city}`)
       .then((response) => {
         setTemp("Temperature :"+ response.data.current.temp_c + " °C");
         setIcon(response.data.current.condition.icon);
